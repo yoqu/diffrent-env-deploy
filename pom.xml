@@ -26,6 +26,11 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.iflytek.cbg</groupId>
+            <artifactId>data-${deploy-type}</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
@@ -38,23 +43,23 @@
             <properties>
                 <deploy-type>private</deploy-type>
             </properties>
-            <dependencies>
-                <dependency>
-                    <groupId>com.iflytek.cbg</groupId>
-                    <artifactId>data-private</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>
-            </dependencies>
+            <!-- <dependencies>
+                 <dependency>
+                     <groupId>com.iflytek.cbg</groupId>
+                     <artifactId>data-private</artifactId>
+                     <version>1.0-SNAPSHOT</version>
+                 </dependency>
+             </dependencies>-->
         </profile>
         <profile>
             <id>public</id>
-            <dependencies>
-                <dependency>
-                    <groupId>com.iflytek.cbg</groupId>
-                    <artifactId>data-public</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>
-            </dependencies>
+            <!-- <dependencies>
+                 <dependency>
+                     <groupId>com.iflytek.cbg</groupId>
+                     <artifactId>data-public</artifactId>
+                     <version>1.0-SNAPSHOT</version>
+                 </dependency>
+             </dependencies>-->
             <properties>
                 <deploy-type>public</deploy-type>
             </properties>

@@ -16,5 +16,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+    <properties>
+        <user.env>public</user.env>
+    </properties>
+    <build>
+        <finalName>data-public-${user.env}</finalName>
+    </build>
 
 </project>
